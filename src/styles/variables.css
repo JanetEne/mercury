@@ -1,0 +1,19 @@
+:root {
+  /*==== COLORS ====*/
+  --primary-color: #213F7D;
+  --secondary-color: #39CDCC;
+  --text-color: #545F7D;
+  --bg-color: #E5E5E5;
+
+  --badge-pending: #E9B200;
+  --badge-active: #39CD62;
+  --badge-blacklist: #E4033B;
+  --badge-inactive: #545F7D;
+
+
+  /*===== TYPOGRAPHY ====*/
+  --body-font: 'Work Sans', sans-serif;
+  --regular-font: "avenir_next_lt_proregular", sans-serif;
+  --bold-font: "avenir_next_lt_probold", sans-serif;
+  --tabs-font: "sf_compact_textregular", sans-serif;
+}

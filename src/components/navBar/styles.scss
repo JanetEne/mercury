@@ -1,0 +1,142 @@
+@import "../../styles/breakpoints.scss";
+
+.navbar {
+  background-color: white;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  @include md {
+    height: 100px;
+  }
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    .menu {
+      svg.hamburger {
+        width: 2rem;
+        padding-right: 2rem;
+  
+        @include lg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .showSearchBar {
+    display: flex;
+    justify-content: center;
+    
+    @include lg {
+      display: none;
+    }
+  }
+
+  .searchBar {
+    display: flex;
+
+    input {
+      border-radius: 6px 0 0 6px;
+      height: 40px;
+      width: 100%;
+      margin-bottom: 0px;
+
+      @include md {
+        width: 400px;
+      }
+
+      @include xl {
+        width: 394px;
+      }
+    }
+  }
+
+  .headerContainer {
+    display: none;
+
+    @include lg {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 250px 450px 1fr;
+      padding: 0 25px;
+      box-sizing: border-box;
+      align-items: center;
+    }
+
+    @include xl {
+      grid-template-columns: 250px 650px 1fr;
+    }
+
+    .iconContainer {
+      display: flex;
+
+      .iconLogo {
+        margin-left: 10px;
+      }
+    }
+
+    .searchBar {
+      display: flex;
+
+      input {
+        border-radius: 6px 0 0 6px;
+        height: 40px;
+        width: 300px;
+        margin-bottom: 0px;
+
+        @include xl {
+          width: 394px;
+        }
+      }
+    }
+
+    .rightSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: underline;
+        color: var(--primary-color);
+      }
+
+      .imageProfileContainer {
+        display: flex;
+
+        .imageContainer {
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+          }
+        }
+
+        .nameIconContainer {
+          display: flex;
+          align-items: center;
+
+
+          h4 {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--primary-color);
+            margin: 0 5px;
+          }
+        }
+      }
+
+
+    }
+  }
+}

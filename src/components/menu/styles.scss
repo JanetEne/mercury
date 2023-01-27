@@ -1,0 +1,55 @@
+@import "../../styles/breakpoints.scss";
+
+.menuContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logoContainer {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px;
+    border: none;
+    vertical-align: middle;
+    transition: box-shadow 0.4s ease;
+    margin-left: auto;
+  }
+
+  .menuChildrenContainer {
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    padding: 20px 10px 0px 5px;
+    right: -25px;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+
+    @include lg {
+      right: -45px;
+      padding: 20px 15px 0px 10px;
+    }
+
+    .showMenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+
+    }
+
+    .hideMenu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+    }
+
+  }
+}

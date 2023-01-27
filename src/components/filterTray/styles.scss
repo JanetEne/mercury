@@ -1,0 +1,62 @@
+.filterTrayContainer {
+  background: #FFFFFF;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  border-radius: 4px;
+  position: absolute;
+  top: 10%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  left: 2%;
+  width: 270px;
+  height: auto;
+  z-index: 0;
+
+  .filterProperties {
+    margin-bottom: 15px;
+
+    input {
+      margin-bottom: 0;
+      border: 1px solid rgba(33, 63, 125, 0.2);
+      border-radius: 8px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--text-color);
+      margin-bottom: 5px;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+
+    button {
+width: 100px;
+    }
+  }
+
+  .selectContainer {
+    select {
+      height: 50px;
+      background: #FFFFFF;
+      border: 1px solid rgba(33, 63, 125, 0.2);
+      border-radius: 8px;
+      color: var(--text-color);
+      opacity: 0.6;
+      padding: 0 10px;
+      box-sizing: border-box;
+      width: 100%;
+      outline: none;
+  
+      &::placeholder {
+        color: var(--text-color);
+        opacity: 0.6;
+      }
+    }
+  }
+}

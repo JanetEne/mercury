@@ -1,0 +1,274 @@
+@import "../../../styles/breakpoints.scss";
+
+.userDetailsContainer {
+  width: 100%;
+
+  .backArrowContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h3 {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--text-color);
+      margin-left: 10px;
+    }
+  }
+
+  .headerTextButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    @include md {
+      flex-direction: row;
+    }
+
+    .buttonContainer {
+      display: flex;
+      gap: 15px;
+
+      button {
+        width: 100%;
+
+        @include md {
+          width: 170px;
+        }
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+
+      @include md {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .profileCard {
+    height: auto;
+    padding: 20px 20px 0 20px;
+    background-color: white;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+
+    @include lg {
+      overflow-x: hidden !important;
+    }
+
+
+    .detailsSection {
+      .detailsContainer {
+        display: flex;
+
+        .profileDetailsContainer {
+          display: flex;
+          align-items: center;
+          border-right: 1px solid rgba(84, 95, 125, 0.2);
+
+          .profileContainer {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            border-radius: 50px;
+            margin-right: 10px;
+          }
+
+          .textContainer {
+            margin-right: 20px;
+
+            h2 {
+              font-weight: 500;
+              font-size: 22px;
+              color: var(--primary-color);
+              margin-bottom: 8px;
+            }
+
+            h6 {
+              font-weight: 400;
+              font-size: 14px;
+              color: var(--text-color);
+            }
+          }
+        }
+
+
+        .usersTier {
+          display: flex;
+          align-items: center;
+          border-right: 1px solid rgba(84, 95, 125, 0.2);
+
+          .textStarsContainer {
+            margin: 0 30px;
+
+            h5 {
+              font-weight: 500;
+              font-size: 14px;
+              color: var(--text-color);
+            }
+
+            .starContainer {
+              margin-top: 10px;
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+
+        .usersAccountContainer {
+          display: flex;
+          align-items: center;
+
+          .accountBalance {
+            margin-left: 30px;
+
+            h1 {
+              font-weight: 500;
+              font-size: 22px;
+              color: var(--primary-color);
+              margin-bottom: 12px;
+            }
+
+            h5 {
+              font-weight: 400;
+              font-size: 12px;
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .tabs {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(6, 150px);
+      width: 100%;
+      position: relative;
+
+      @include lg {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      @include xl {
+        margin-top: 55px;
+      }
+
+      .generalOptions {
+        border-bottom: 2px solid var(--secondary-color);
+        text-align: center;
+        justify-content: center;
+
+        h5 {
+          color: var(--secondary-color);
+          font-weight: 400;
+          font-size: 14px;
+
+          @include xl {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .options {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+
+      h4 {
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: var(--tabs-font);
+
+        @include xl {
+          font-size: 16px;
+        }
+      }
+      }
+    }
+  }
+
+  .userInformation {
+    height: auto;
+    padding: 20px 20px 0 20px;
+    background-color: white;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    margin-top: 30px;
+
+    h4 {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .personalInformationSection,
+    .educationInformationSection,
+    .socialsInformationSection,
+    .guarantorInformationSection {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      color: var(--text-color);
+      gap: 15px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+      margin-bottom: 30px;
+
+      @include md {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include xl {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+
+      h3 {
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      h6 {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    .educationInformationSection {
+      grid-template-columns: repeat(1, 1fr);
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include lg {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include xl {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .guarantorInformationSection {
+      border-bottom: none;
+    }
+  }
+}

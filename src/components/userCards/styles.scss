@@ -1,0 +1,66 @@
+.cardContainer {
+  background: #FFFFFF;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 30px 20px;
+  box-sizing: border-box;
+
+  .iconContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .userIcon {
+    background-color: rgba(223,24,255,0.1);
+
+    svg path {
+      fill: #DF18FF
+    }
+  }
+
+  .activeUserIcon {
+    background-color: rgba(175, 144, 255,0.1);
+
+    svg path {
+      fill: #5718FF
+    }
+  }
+
+  .loanIcon {
+    background-color: rgba(245, 95, 68, 0.1);
+
+    svg path {
+      fill: #F55F44
+    }
+  }
+
+  .savingsIcon {
+    background-color: rgba(255,51,102,0.1);
+
+    svg path {
+      fill: #FF3366
+    }
+  }
+
+  h4 {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+
+  h1 {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+
+}

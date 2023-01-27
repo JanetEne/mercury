@@ -1,0 +1,32 @@
+.inputContainer {
+  position: relative;
+
+  input {
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    color: var(--text-color);
+    opacity: 0.6;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 24px;
+    outline: none;
+
+    &::placeholder {
+      color: var(--text-color);
+      opacity: 0.6;
+    }
+  }
+
+  .trailingText {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--regular-font) !important;
+  }
+}

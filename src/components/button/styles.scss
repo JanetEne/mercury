@@ -1,0 +1,53 @@
+@import "../../styles/breakpoints.scss";
+
+button {
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  width: 100%;
+
+  @include xl {
+    font-size: 14px;
+  }
+}
+
+.blockButton,
+.fluidButton {
+  height: 48px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: var(--regular-font);
+}
+
+.fluidButton {
+  height: 40px;
+  color: white;
+  font-family: var(--body-font);
+}
+
+.resetButton {
+  height: 40px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.dangerButton {
+  height: 40px;
+  color: #E4033B;
+  border: 1px solid #E4033B;
+}
+
+.transparentButton {
+  height: 40px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.searchButton {
+  height: 40px;
+  color: white;
+  width: 56px;
+  background-color: var(--secondary-color);
+  border-radius: 0px 6px 6px 0px;
+}
